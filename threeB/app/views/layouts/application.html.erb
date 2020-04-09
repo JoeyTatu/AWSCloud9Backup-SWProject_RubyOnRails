@@ -23,10 +23,13 @@
         <div id="navbar" class="collapse navbar-collapse">
           <% if user_signed_in? %>
             <ul class="nav navbar-nav navbar-right">
-              <li><small>Logged in as <strong><%= current_user.email %></strong><br /><%= link_to "Logout", destroy_user_session_path, method: :delete %></small></li>
+              <li><small>Logged in as <strong><%= current_user.email %></strong><br />
+              <%= link_to 'Edit account', edit_user_registration_path %> |
+              <a href="/users/<%= current_user.id %>">View Profile</a> |
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %></small></li>
             </ul>
             <ul class="nav navbar-nav">
-              <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+              <li><%= link_to 'Profiles', profiles_index_path %></li>
             </ul>
             
           <% else %>

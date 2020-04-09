@@ -2,10 +2,21 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
+  
+  
+  <!--<div class="field">-->
+  <!--  <%#= datepicker_input :date_of_birth %>-->
+  <!--</div>-->
+  
+  <!--<div class='input-group date' id='datetimepicker1'>-->
+  <!--  <input type='text' class="form-control" />-->
+  <!--  <span class="input-group-addon">-->
+  <!--      <span class="glyphicon glyphicon-calendar"></span>-->
+  <!--  </span>-->
+  <!--</div>-->
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control' %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "e.g. jsmith@examle.com", :class => 'form-control' %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

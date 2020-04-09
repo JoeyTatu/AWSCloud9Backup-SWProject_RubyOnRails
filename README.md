@@ -22,3 +22,6 @@ Available at: https://medium.com/@anaharris/how-to-add-image-upload-functionalit
 # User authenication (Sign up/Log in)
 Reynoso, R.. 2019. Simple Authentication Guide with Ruby on Rails. [ONLINE]
 Available at: https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8 [Accessed 20 February 2020].
+
+# Datepicker
+Revelli, M. (2016). The easiest way to add a Datepicker in Rails. [ONLINE]. Available at: https://dev.mikamai.com/2016/07/13/the-easiest-way-to-add-a-datepicker-in-rails/ [Accessed 25 February 2020].

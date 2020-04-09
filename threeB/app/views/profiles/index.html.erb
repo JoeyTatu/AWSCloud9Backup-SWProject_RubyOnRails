@@ -1,0 +1,10 @@
+<h1>Profiles</h1>
+<% if !(@profile) %>
+    <h3>Ooops!</h3>
+    <p>There are currently no profiles.</p>
+<% else %>
+    <% @profile.each do |profile| %>
+        <h3><%= profile.id %></h3>
+        <p><%= profile.first_name %> <%= profile.last_name %></p>
+    <% end %>
+<% end %>
